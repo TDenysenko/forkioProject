@@ -1,0 +1,166 @@
+.prices {
+    background-image: url(../img/subscription_pricing/bg_pricing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.0001);
+    &__title {
+        font-size: 48px;
+        line-height: 50px;
+        text-align: center;
+        color: #FFFFFF;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        margin-top: 0;
+        margin-bottom: 0;
+        @include onTablet {
+            font-size: 42px;
+            line-height: 44px;
+            padding-bottom: 40px; 
+        }
+        @include onMobile {
+            font-size: 28px;
+            line-height: 42px;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+    }
+    &__card-wrapper{
+        @include listReset;
+        display: grid;
+        grid-template-areas: 
+            "card-1 card-2 card-3 card-4";
+            grid-template-columns: minmax(215px, 257px) minmax(215px, 257px) minmax(215px, 299px) minmax(215px, 257px);
+        column-gap: 15px;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        padding-left: 15px;
+        padding-right: 15px;
+        @include onTablet {
+            grid-template-areas: 
+            "card-1 card-2" 
+            "card-3 card-4";
+            grid-template-columns: minmax(215px, 299px) minmax(215px, 257px);
+            column-gap: 25px;
+            row-gap: 30px;
+        }
+        @include onMobile {
+            grid-template-areas: 
+            "card-1" 
+            "card-2" 
+            "card-3" 
+            "card-4";
+            grid-template-columns: minmax(215px, 257px);
+            column-gap: 0;
+            row-gap: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+.prices__card {
+    background-color: rgba(255, 255, 255, .11);
+    text-align: center;
+    color: #FFFFFF;
+    height: 457px;
+    width: 100%;
+    position: relative;
+}
+.prices__card-1 {
+    grid-area: card-1;
+    @include onTablet {
+        max-width: 257px;
+        justify-self: right;
+    }
+}
+.prices__card-2 {
+    grid-area: card-2;
+}
+.prices__card-3 {
+    grid-area: card-3;
+}
+.prices__card-4 {
+    grid-area: card-4;
+}
+.prices__card--active {
+    background-color: rgba(70, 48, 72, .84);
+    height: 560px;
+    @include onMobile {
+        width: 299px;
+        justify-self: center;
+    }
+}
+.card__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+.card__title--active {
+    background-color: rgba(0, 0, 0, 0.11);
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+.card__price {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.card__price > span {
+    font-style: normal;
+    font-weight: 400;
+}
+.card__price--active {
+    font-size: 82px;
+    line-height: 82px;
+}
+.card__text {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+.card__text::after {
+    content: "";
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 5px;
+    background-color:#8D81AC;
+}
+.card__text--active::after{
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+.card__description {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 20px 120px;
+}
+.card__link {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 15px 35px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 35px;
+}
+.card__link--active {
+    padding: 18px 48px;
+    bottom: 45px;
+}

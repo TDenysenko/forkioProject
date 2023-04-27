@@ -1,0 +1,125 @@
+.what-you-get {
+    background-color: #F4F4F4;
+    position: relative;
+    @include onTablet {
+        background-color: rgba(0, 0, 0, 0.0001);
+    }
+}
+.what-you-get__container {
+    padding: 90px 0 70px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 45px;
+    @include onTablet {
+        grid-template-columns: 1fr;
+        padding-bottom: 520px;
+        padding-top: 50px;
+    }
+}
+.what-you-get__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: #8D81AC;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    @include onTablet {
+        margin-bottom: 50px;
+        font-size: 42px;
+        line-height: 44px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    @include onMobile {
+        font-size: 32px;
+        line-height: 38px;  
+    }
+}
+.what-you-get__advantage {
+    @include listReset;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    @include onTablet {
+        margin-bottom: 50px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+}
+.advantage__card {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 4fr;
+    @include onMobile {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.advantage__image-wrapper {
+    min-width: 112px;
+    text-align: center;
+    @include onDesktop {
+        margin-left: 10px;
+    }
+    @include onTablet {
+        margin-left: 20px;
+    }
+    @include onMobile {
+        margin-left: 0;
+    }
+}
+.advantage__info {
+    @include onTablet {
+        margin-right: 25px;
+    }
+    @include onMobile {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+.advantage__card-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #323232;
+    @include onMobile {
+        line-height: 16px;
+    }
+}
+.advantage__card-text {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #848E97;
+}
+.what-you-get__editor-img--hidden {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    overflow: hidden;
+    width: 50%;
+    height: 519px;
+    text-align: right;
+    @include onTablet {
+        width: 100%;
+        bottom: 0;
+    }
+}
+.what-you-get__editor-img {
+    object-fit: contain;
+}
+  

@@ -1,0 +1,107 @@
+.about-fork {
+  background-image: url(../img/aboutfork/backaboutfork.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 108px;
+  @include onTablet {
+    padding-top: 87px;
+  }
+  @include onMobile {
+    padding-top: 57px;
+  }
+}
+
+.about-fork__title {
+  @include sectionTitleWhite;
+  margin-top: 0;
+  margin-bottom: 84px;
+  @include onTablet {
+    margin-bottom: 88px;
+  }
+  @include onMobile {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 53px;
+  }
+}
+
+.about-fork__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 111px;
+  column-gap: 87px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  @include onTablet {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 56px;
+    column-gap: 63px;
+  }
+  @include onMobile {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+  }
+}
+
+.about-fork__item {
+  text-align: center;
+  @include onTablet {
+    &--pixel {
+      padding-top: 18px;
+    }
+  }
+}
+
+.about-fork__item-text {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  margin: 0;
+  margin-top: 35px;
+}
+
+.fork__item {
+  &--middle-margin{
+    margin-top: 27px;
+  }
+  &--small-margin{
+    margin-top: 12px;
+  }
+}
+
+.about-fork__text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #a291a5;
+  text-align: center;
+  margin: 119px auto 18px auto;
+  width: 75%;
+  @include onTablet {
+    width: 90%;
+  }
+  @include onMobile {
+    margin: 67px auto 22px auto;
+  }
+}
+
+.about-fork__line {
+  width: 80%;
+  height: 2px;
+  background-color: #645766;
+  border: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-fork__line-wrapper{
+  background-color: #4b3b4e;
+  padding-bottom: 15px;
+}
+
